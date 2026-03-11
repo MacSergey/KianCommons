@@ -44,8 +44,8 @@ namespace KianCommons {
             return false;
         }
 
-        public static bool IsAnyFlagSet(DynamicFlags flags, DynamicFlags flags2) {
-            return !DynamicFlags.Check(flags, new DynamicFlags(EMPTY_FLAGS), flags2);
+        public static bool IsAnyFlagSet(DynamicFlags<NetInfo> flags, DynamicFlags<NetInfo> flags2) {
+            return !DynamicFlags<NetInfo>.CheckAny(flags, new DynamicFlags<NetInfo>(EMPTY_FLAGS), flags2);
         }
 
 
